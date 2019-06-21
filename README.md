@@ -39,7 +39,7 @@ $ docker pull vincentliao/gitbook_env
 
 ```
 $ cd gitbook_template
-$ docker run -it --init -p 4000:4000 -v {$PWD}:/gitbook_template gitbook-env "/gitbook_template/run.sh"
+$ docker run -it --init -p 4000:4000 -v $(pwd):/gitbook_template gitbook-env "/gitbook_template/run.sh"
 ```
 
 透過 `make serve` 執行後，會不斷的偵測書本原始內容是否有修改，倘若被改動，則會觸發重新編譯書籍，隨時可以看到修改好的內容。
