@@ -1,0 +1,55 @@
+{
+	"gitbook": ">=0.3.6",
+	"pdf": {
+		"fontSize": 12,
+		"paperSize": "a4"
+	},
+	"plugins": [
+		"katex",
+		"simpletabs",
+		"image-captions",
+		"prism",
+		"terminal",
+		"richquotes",
+		"splitter",
+		"callouts",
+		"hints",
+        "uml",
+		"-highlight"
+	],
+
+	"pluginsConfig": {
+		"prism": {
+			"css": ["prismjs/themes/prism-solarizedlight.css"]
+		},
+        "terminal": {
+            "copyButtons": true,
+            "fade": false,
+            "style": "flat"
+		},
+		"richquotes": {
+			"star": {
+				"quote": "fa fa-quote-left",
+                "alert": "warning",
+				"picto": "fa-star"
+			}
+		},
+		"callouts": {
+            "star": {
+                "alert": "warning",
+                "picto": "fa-star"
+            }
+		},
+		"hints": {
+            "info": "fa fa-info-circle",
+            "tip": "fa fa-mortar-board",
+            "danger": "fa fa-exclamation-cicle",
+			"working": "fa fa-wrench",
+			"quote": "fa fa-quote-left"
+        },
+		"image-captions": {
+			"align": "left",
+			"caption":"圖說: _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+@startuml
+!includeurl https://gitlab.kkinternal.com/vincentliao/appdev-c4-template/raw/master/appdev-c4-template.puml
+
+if () then 
+    :A;
+else
+    :B;
+    split
+        :C-1 /
+    split again
+        :C-2 /
+    split again
+        :C-3 /
+    end split
+endif
+:D;
+
+@enduml
