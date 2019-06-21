@@ -38,8 +38,8 @@ $ docker pull vincentliao/gitbook_env
 最後，就是把環境執行起來，並且編譯好樣版書，範例是把書放在 http://localhost:4000 中，開啟瀏覽器後就可以看到。
 
 ```
-$ cd gitbook-template
-$ docker run -it --init -p 4000:4000 -v {$PWD}:/gitbook_template gitbook-env "/gitbook-template/run.sh"
+$ cd gitbook_template
+$ docker run -it --init -p 4000:4000 -v {$PWD}:/gitbook_template gitbook-env "/gitbook_template/run.sh"
 ```
 
 透過 `make serve` 執行後，會不斷的偵測書本原始內容是否有修改，倘若被改動，則會觸發重新編譯書籍，隨時可以看到修改好的內容。
